@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 body {
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed" ,sans-serif;
 }
 
 :root {
   --primary-white: #fff;
   --primary-black: #2d2d2d;
+  --primary-blue: #182fff; 
   --primary-dark: rgba(255, 25, 255, 0);
 }
-/****** NavBar *****/
-
-.logo {
-  width: 11.5rem;
- height: 9.5rem;
+/****** NavBar *******/
+nav {
+  position: absolute;
+  z-index: 1;
 }
 
-/***** Menulinks *****/
+.bg-dark {
+  background-color: /*#000000*/ rgb(46, 45, 45)  !important;
+}
+
+.logo {
+  width: 9.5rem;
+ height: 7.5rem;
+}
+
+/****** Menulinks *****/
 
 nav .nav-link {
   font-size: .9rem;
@@ -39,19 +48,274 @@ nav .nav-link {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-border-top: 0.1875rem solid var(--primary-black)
-
-}
+  border-top: solid  var(--primary-blue) ;
+  border-radius: 5px;
+  }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-black)
+  border-top: solid  var(--primary-blue) ;
+  border-radius: 5px;
+  
 }
 
 .navbar-toggler-icon:focus{
   border-top: 0.1875rem solid whitesmoke;
 }
 
+/****** Header *******/
+
+.header-wraper {
+  position: relative;
+  background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg) ;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-blue);
+  font-weight: bolder;
+}
+
+/****** Typed Header *******/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/****** Header cv button *******/
+
+.btn-main-cv {
+padding: 1rem 0.75rem 0.75rem 0.75rem;
+margin: 0.65rem;
+
+}
+
+.downloadcv {
+  color: #fff;
+}
+
+.about-me {
+  background-color: #E2E2E7;
+}
+
+/****** PArticles js *******/
+
+.tsparticles-canvas-el {
+position: absolute;
+height: 100vh;
+width: 100vw;
+z-index: 1;
+}
+
+/****** About me  *******/
+
+.about-me {
+  background-color: rgb(233, 233, 233);
+  border-top: 0.10rem solid var(--primary-blue);
+  padding: 20px 60px 20px 40px;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+}
+
+.aboutme-title  {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-me {
+  margin-top: 10px;
+}
+
+/****** timeline *******/
+
+.timeline-body{
+  background-color: rgb(46, 45, 45);
+  font-size: 16px;
+  color: rgb(49, 49, 49);
+}
+
+.title {
+  font-size: 7em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 30px;
+}
+
+h3{
+  padding-top: 0.22em;
+}
+
+.vertical-timeline-element-content {
+  padding: 2em 3em !important;
+}
+
+.date {
+color: rgb(224, 230, 233); /* I can a put a lighter color and darker bg-color and at the media rule I the font appears blacker  */
+}
+
+#description {
+  margin: 1.5em 0 2em 0; 
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #dba470;
+}
+
+.workButton:hover {
+  background-color: #eea663;
+  color: white;
+  text-decoration: none;
+}
+
+.schoolButton {
+  background-color: #698ed1; 
+}
+
+.schoolButton:hover {
+  background-color: #404dc2; 
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(41, 41, 41);
+    margin-top: 1em;
+  }
+}
+
+/****** PROJECTS *******/
+
+.wraper-projects {
+  background-color: #f5f5f5;
+}
+.projects-1 {
+display: flex;
+justify-content: space-evenly;
+padding-top: 3rem;
+padding-bottom: 2rem;
+border-radius: 3px;
+}
+
+.projects-2 {
+  display: flex;
+justify-content: space-evenly;
+padding-top: 1rem;
+border-radius: 3px;
+padding-top: 30px;
+}
+
+.card-body {
+  background-color: #e4e4e4;
+}
+
+.projects-title {
+text-align: center;
+font-weight: bold;
+padding-top: 30px;
+}
+
+.image-me{
+  border-radius: 50%;
+}
+
+.Footer {
+  background-color: rgb(46, 45, 45);
+  
+}
+
+.contact-info {
+  text-align: center;
+  align-items: center;
+  color: #e4e4e4;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 1rem 0 1rem 0;
+}
+
+.copyright {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  font-size: smaller;
+  color: #fff;
+  background-color: /*rgb(110, 107, 109)*/ rgb(53, 52, 52);
+}
+
+.linkedinlogo {
+  width: 40px;
+  height: 40px;
+}
+
+.modal {
+  font-size: 12px;
+}
 
 
+.popup-content {
+  background-color: rgb(99, 129, 189) ;
+  width: 60%;
+  padding: 5px;
+  border-radius: 10px;
+  /*border: 1px solid #c45353;*/
+  font-size: larger;
+  text-align: -webkit-center;
+}
 
+.popup-content > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #888787;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
 
+  .popup-content > .header {
+    width: 100%;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .popup-content > .project-info {
+  padding: 10px 5px;
+  }
