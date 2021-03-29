@@ -1,7 +1,7 @@
 let projectsInfo = [
     {
         id: 1,
-        img: "images/model.jpg", 
+        img: "images/card1.jpg", 
         title: "Card 1",
         projectName: "Occycling",
         tools: "React | Javascript | ReactBoostrap | Express | Node.Js | Postman | PostgreSql | HTML5 | CSS3 | JWT",
@@ -17,7 +17,7 @@ let projectsInfo = [
     },
     {
         id: 3,
-        img: "images/T800.jpeg",
+        img: "images/card3.jpg",
         title: "Card 3",
         projectName: "Swimming",
         tools: "React | Python | SQL | HTML5 | .NET ",

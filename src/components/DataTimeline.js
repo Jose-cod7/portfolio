@@ -32,10 +32,10 @@ let timelineData = [
     {
         id: 4,
         title: "Freelance",
-        location: "Everywhere",
+        location: "Migracode",
         description:
             "Web development, DB, MVC, UI/UX",
-        buttonText: "View my popa",
+        buttonText: "View site",
         date: "Dec 2020 - present",
         icon: "work", 
     }
