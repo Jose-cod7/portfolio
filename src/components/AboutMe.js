@@ -22,10 +22,10 @@ const AboutMe = () => {
             <Media.Body>
               <h3 className="aboutme-title">About me</h3>
               <p>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-                Donec lacinia congue felis in faucibus.
+              I completed a degree in the field of industrial engineering with 10 years experience in corporate enviroments, now recycling to IT in search of new projects that provide me
+              both new challenges and the possibility of continuing to learn.I love teamwork and have
+              developed a great analytical capacity and leadership, I am passionate about
+              technology that led me to train as a junior developer.
               </p>
                 <br/>
               <Media>

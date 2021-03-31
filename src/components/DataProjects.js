@@ -6,7 +6,7 @@ let projectsInfo = [
         projectName: "Occycling",
         tools: "React | Javascript | ReactBoostrap | Express | Node.Js | Postman | PostgreSql | HTML5 | CSS3 | JWT",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pellentesque tellus, sed egestas magna. Aliquam fringilla eu tortor sed suscipit. Mauris at orci viverra, venenatis velit vel, finibus felis. Maecenas sed nisl ornare velit aliquet facilisis."
-    },
+    }/*,
     {
         id: 2,
         img: "images/citycode.jpg",
@@ -22,7 +22,7 @@ let projectsInfo = [
         projectName: "Swimming",
         tools: "React | Python | SQL | HTML5 | .NET ",
         description: "Swim, swimming, crawl, breaststroke, buterfly, backstroke, googles, swim suit, dive, swimming pool, medalls ."
-    }
+    }*/
 ] 
 
 export default projectsInfo;

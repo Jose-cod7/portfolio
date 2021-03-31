@@ -5,7 +5,6 @@ import Link from "../images/linkedin-icon.png";
 export const Footer = () => {
     return (
         <div className="Footer">
-            <h1>Contact me</h1>
             <Container  fluid>
                 <Row className="contact-info">
                     <Col> Movil: +34 622 383 091</Col>
@@ -15,7 +14,7 @@ export const Footer = () => {
             </Container>
             <Container fluid>
                 <Row className="copyright">
-                    <Col>  &copy; {new Date().getFullYear()} Copyright: José Arriaga</Col>
+                    <Col className="copyr">  &copy; {new Date().getFullYear()} Copyright: José Arriaga</Col>
                 </Row>
             </Container>
         </div>
