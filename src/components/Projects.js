@@ -12,11 +12,14 @@ const Projects = () => {
 
   return (
     <div className="wraper-projects">
-      <h1 className="projects-title">PROJECTS</h1>;
+      <h1 id="PORTFOLIO" className="projects-title">
+        PROJECTS
+      </h1>
+      ;
       <div className="projects-1">
         {DataProjects.map((element) => {
           return (
-            <Card style={{ width: "18rem" }}>
+            <Card className="project-card">
               <Card.Img variant="top" key={element.id} src={element.img} />
 
               <Card.Body>
@@ -51,7 +54,7 @@ const Modal = ({ title, tools, description }) => {
       id="staticBackdrop"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
@@ -66,7 +69,10 @@ const Modal = ({ title, tools, description }) => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+              style={{ borderRadius: "7px" }}
+            >
+              x
+            </button>
           </div>
           <div className="modal-body">
             <p>{tools}</p>

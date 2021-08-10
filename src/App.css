@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 
 body {
-  font-family: "Roboto Condesed" ,sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 :root {
   --primary-white: #fff;
   --primary-black: #2d2d2d;
-  --primary-blue: #182fff; 
+  --primary-blue: #182fff;
   --primary-dark: rgba(255, 25, 255, 0);
 }
 /****** NavBar *******/
 nav {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bg-dark {
-  background-color: /*#000000*/ rgb(46, 45, 45)  !important;
-  
+  background-color: /*#000000*/ rgb(46, 45, 45) !important;
 }
 
 .fullstack {
@@ -30,10 +29,16 @@ nav {
 /****** Menulinks *****/
 
 nav .nav-link {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.2px;
   cursor: pointer;
+}
+
+.navbar {
+  padding: 35px 10px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-nav > li > a {
@@ -43,45 +48,67 @@ nav .nav-link {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-
-
 .navbar-brand {
   max-width: 16.25rem;
   padding: 0 !important;
-  height: 8rem !important; /*  fullstack height  */
-  font-weight: bold;
-  font-size: xx-large;
-  font-family: 'Train One', cursive;
+  /* height: 8rem !important;  fullstack height  */
+  font-weight: lighter;
+  font-size: 2rem;
+  font-family: "Train One", cursive;
   color: #e4e4e4 !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: solid  var(--primary-blue) ;
-  border-radius: 5px;
-  }
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: solid var(--primary-blue);
 
-.navbar-nav > li > a:hover {
-  border-top: solid  var(--primary-blue) ;
   border-radius: 5px;
-  
 }
 
-.navbar-toggler-icon:focus{
+.navbar-nav > li > a:hover {
+  border-top: solid var(--primary-blue);
+  border-radius: 3px;
+  width: fit-content;
+}
+
+.navbar-toggler-icon:focus {
   border-top: 0.1875rem solid whitesmoke;
 }
 
+.hireme {
+  /* height: 89vh; */
+  padding: 135px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hireme-title {
+  font-family: keys;
+  font-size: 2.5rem;
+}
+
+.p-hireme {
+  padding: 5px 30px;
+  text-align: justify;
+}
+
+/* .Content {
+  position: relative;
+  height: 100vh;
+} */
 /****** Header *******/
 
 .header-wraper {
   position: relative;
-  background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg) ;
+  background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg);
   background-size: 100% 100%;
   background-position: center;
   height: 80vh;
   width: 100%;
 }
 
-.main-info{
+.main-info {
   display: flex;
   position: absolute;
   top: 5;
@@ -92,87 +119,110 @@ nav .nav-link {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: px;
   z-index: 1;
 }
 
 .main-info h1 {
-  color: var(--primary-blue);
-  font-weight: bolder;
+  font-family: kap;
 }
 
 /****** Typed Header *******/
 
+@font-face {
+  font-family: keys;
+  src: url("where_my_keys.otf");
+}
+
+@font-face {
+  font-family: kap;
+  src: url("ka1.ttf");
+}
+
 .typed-text {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: keys;
   color: var(--primary-white);
 }
 
 /****** Header cv button *******/
 
 .btn-main-cv {
-padding: 1rem 0.75rem 0.75rem 0.75rem;
-margin: 0.65rem;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0.65rem 0rem 0rem;
+  background-color: var(--primary-white);
+}
 
+.skills {
+  color: #f8f9fa;
 }
 
 .downloadcv {
-  color: #fff;
-}
-
-.about-me {
-  background-color: #E2E2E7;
+  color: var(--primary-white);
 }
 
 /****** PArticles js *******/
 
 .tsparticles-canvas-el {
-position: absolute;
-height: 100vh;
-width: 100vw;
-z-index: 1;
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  z-index: 1;
 }
 
 /****** About me  *******/
 
 .about-me {
   background-color: rgb(233, 233, 233);
-  border-top: 0.10rem solid var(--primary-blue);
-  padding: 20px 60px 20px 40px;
-  height: 30rem;
+  border-top: 0.1rem solid var(--primary-blue);
+  padding: 20px 40px 20px 40px;
+  /* height: 30rem; */
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
-.aboutme-title  {
-  background: black;
-  color: white;
-  border-radius: 10px;
-  width: 200px;
+.aboutme-title {
+  /* background: black; */
+  color: rgb(39, 38, 38);
+  font-family: keys;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  /* width: 200px; */
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.media-body {
+  padding-left: 3rem;
 }
 
 .image-me {
   margin-top: 10px;
+  border-radius: 5%;
 }
 
 /****** timeline *******/
 
-.timeline-body{
+.timeline-body {
   background-color: rgb(46, 45, 45);
   font-size: 16px;
   color: rgb(49, 49, 49);
+  width: 100%; /* Added */
 }
 
 .title {
-  font-size: 7em;
+  font-size: 2.5em; /*change from 7 to 5*/
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  padding-top: 30px;
+  color: var(--primary-white);
+  font-family: keys;
+  padding: 30px 0px 20px 0px;
+
+  text-emphasis-style: open;
 }
 
-h3{
-  padding-top: 0.22em;
+h3 {
+  padding: 0.22em 0em;
 }
 
 .vertical-timeline-element-content {
@@ -180,11 +230,15 @@ h3{
 }
 
 .date {
-color: rgb(224, 230, 233); /* I can a put a lighter color and darker bg-color and at the media rule I the font appears blacker  */
+  color: rgb(
+    224,
+    230,
+    233
+  ); /* I can a put a lighter color and darker bg-color and at the media rule I the font appears blacker  */
 }
 
 #description {
-  margin: 1.5em 0 2em 0; 
+  margin: 1.5em 0 2em 0;
 }
 
 a {
@@ -205,11 +259,11 @@ a {
 }
 
 .schoolButton {
-  background-color: #698ed1; 
+  background-color: #698ed1;
 }
 
 .schoolButton:hover {
-  background-color: #404dc2; 
+  background-color: #404dc2;
   color: white;
   text-decoration: none;
 }
@@ -229,19 +283,15 @@ a {
   background-color: #f5f5f5;
 }
 .projects-1 {
-display: flex;
-justify-content: space-evenly;
-padding-top: 3rem;
-padding-bottom: 2rem;
-border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  border-radius: 3px;
 }
 
-.projects-2 {
-  display: flex;
-justify-content: space-evenly;
-padding-top: 1rem;
-border-radius: 3px;
-padding-top: 30px;
+.modal-content {
+  margin: 0 10px;
 }
 
 .card-body {
@@ -249,28 +299,158 @@ padding-top: 30px;
 }
 
 .projects-title {
-text-align: center;
-font-weight: bold;
-padding-top: 30px;
+  text-align: center;
+  color: rgb(39, 38, 38);
+  font-family: keys;
+  font-size: 2.5rem;
+  padding-top: 30px;
 }
 
-.image-me{
-  border-radius: 50%;
+.project-card {
+  width: 20%;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar {
+    padding: 30px 10px;
+  }
+
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .typed-text {
+    font-size: 2.1rem;
+  }
+
+  .media-body {
+    padding-left: 0rem;
+  }
+
+  .image-me {
+    margin-right: 0rem !important;
+  }
+
+  .about-me {
+    padding: 20px 15px 20px 15px; /**/
+    justify-content: center;
+  }
+
+  .image-me.second {
+    width: 250px;
+    height: 230px;
+  }
+
+  .projects-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .media-comp {
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 358px) {
+  .about-me {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .p-me {
+    padding: 0px 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .media-comp {
+    width: 255px;
+  }
+
+  .more {
+    font-size: 1.6rem !important;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .skills {
+    font-size: 1.5rem !important;
+  }
+  .vertical-timeline-element-title {
+    font-size: 1.3rem;
+  }
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .typed-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .typed-text {
+    font-size: 1.6rem;
+  }
+  .workButton,
+  .schoolButton {
+    font-size: x-small;
+  }
+}
+
+/* @media only screen and (max-width: ) {
+} */
+
+.app {
 }
 
 .Footer {
   background-color: rgb(46, 45, 45);
-  
+
+  position: relative;
+  bottom: 0px;
+  width: -webkit-fill-available;
 }
 
 .contact-info {
   text-align: center;
   align-items: center;
-  color: #e4e4e4;
+  color: var(--primary-white);
   font-weight: bold;
   font-size: 17px;
   height: 4rem;
-  margin: 0.5rem 0 0.5rem 0;
+}
+
+@media only screen and (max-width: 660px) {
+  .contact-info {
+    font-size: 14px;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .column-footer {
+    padding: 10px 0px;
+  }
 }
 
 .copyright {
@@ -280,15 +460,16 @@ padding-top: 30px;
   height: 2rem;
   border-top: 0.4px solid whitesmoke;
   font-size: smaller;
-  color: #fff;
+  color: var(--primary-white);
   background-color: /*rgb(110, 107, 109)*/ rgb(51, 50, 50);
 }
 
-.copyr{
+.copyr {
   margin-top: 5px;
 }
 
-.linkedinlogo {
+.linkedinlogo,
+.Githublogo {
   width: 40px;
   height: 40px;
 }
@@ -296,7 +477,6 @@ padding-top: 30px;
 .modal {
   font-size: 12px;
 }
-
 
 /**** Borrar???
 
@@ -314,7 +494,7 @@ padding-top: 30px;
     border: 1px solid #cfcece;
   } */
 
-  /*
+/*
   .popup-content > .header {
     width: 100%;
     border-bottom: 1px solid rgb(241, 241, 241);

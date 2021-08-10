@@ -6,20 +6,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutMe = () => {
   return (
-    <div class="about-me container-fluid">
-      <div class="row">
-        <div class="col-xl">
-          <Media>
+    <div className="about-me container-fluid">
+      <div className="row">
+        <div className="col-xl">
+          <Media className="media-comp">
             <img
               width={250}
               height={230}
-              className=" image-me mr-3"
+              className=" image-me "
               src={Me}
               alt="Generic placeholder"
             />
-            <Media.Body>
-              <h3 className="aboutme-title">About me</h3>
-              <p>
+            <Media.Body className="media-body">
+              <h3 id="ABOUT_ME" className="aboutme-title">
+                ABOUT ME
+              </h3>
+              <p className="p-me" style={{ textAlign: "justify" }}>
                 I completed a degree in the field of industrial engineering with
                 10 years experience in corporate enviroments, now recycling to
                 IT in search of new projects that provide me both new challenges
@@ -30,17 +32,27 @@ const AboutMe = () => {
                 <span></span>
               </p>
               <br />
-              <Media>
+              <Media className="media-comp">
                 <img
                   width={200}
                   height={160}
-                  className="mr-3"
+                  className="image-me second "
                   src={BlueDemon}
                   alt="Generic placeholder"
                 />
-                <Media.Body>
-                  <h5>Media Heading</h5>
-                  <p>
+                <Media.Body className="media-body">
+                  <h5
+                    className="more"
+                    style={{
+                      paddingTop: "0.7rem",
+                      textAlign: "center",
+                      fontFamily: "keys",
+                      fontSize: "2.3rem",
+                    }}
+                  >
+                    Something more
+                  </h5>
+                  <p className="p-me" style={{ textAlign: "justify" }}>
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                     scelerisque ante sollicitudin commodo. Cras purus odio,
                     vestibulum in vulputate at, tempus viverra turpis. Fusce

@@ -4,16 +4,17 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const junior = "< Fullstack developer>";
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        <a className="navbar-brand mr-auto" href="#">
+        <div className="navbar-brand mr-auto">
           {/*<img className="logo" src={logo} alt="logo"/>*/}
           {junior}
-        </a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,28 +29,28 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="/">
                 HOME
               </a>
             </li>
             <li className="nav-item">
-              <a id="ABOUT_ME" className="nav-link" href="#ABOUT_ME">
+              <a className="nav-link" href="#ABOUT_ME">
                 ABOUT ME
               </a>
             </li>
             <li className="nav-item">
-              <a id="TIME_LINE" className="nav-link" href="#TIME_LINE">
+              <a className="nav-link" href="#TIME_LINE">
                 EDUCATION
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#PORTFOLIO">
                 PORTFOLIO
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                CONTACT ME
+              <a className="nav-link" href="/hireme">
+                HIRE ME
               </a>
             </li>
           </ul>
