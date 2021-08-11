@@ -1,8 +1,7 @@
 import React from "react";
-import Me from "../images/model.jpg";
+// import Me from "../images/model.jpg";
 import BlueDemon from "../images/me.jpg";
 import { Media } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutMe = () => {
   return (
@@ -14,7 +13,7 @@ const AboutMe = () => {
               width={250}
               height={230}
               className=" image-me "
-              src={Me}
+              src={BlueDemon}
               alt="Generic placeholder"
             />
             <Media.Body className="media-body">

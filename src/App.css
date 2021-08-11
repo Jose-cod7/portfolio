@@ -2,9 +2,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 
+/*👇 resets*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#root,
+.app {
+  height: 100vh;
+  min-height: 100%;
+}
+
 body {
   font-family: "Roboto Condesed", sans-serif;
+  overflow-x: hidden; /*😃*/
 }
+
+/*Change the text-align for the <p> tag in version movil scrub the view*/
 
 :root {
   --primary-white: #fff;
@@ -27,6 +43,15 @@ nav {
 }
 
 /****** Menulinks *****/
+
+/*
+
+.footer > nada
+.hireme: margin: 0 auto
+
+
+
+*/
 
 nav .nav-link {
   font-size: 0.9rem;
@@ -101,7 +126,8 @@ nav .nav-link {
 
 .header-wraper {
   position: relative;
-  background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg);
+  /* background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg);*/
+  background: url(./images/bgfullstack.jpg);
   background-size: 100% 100%;
   background-position: center;
   height: 80vh;
@@ -402,7 +428,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 280px) {
+/* @media only screen and (max-width: 280px) {
   .typed-text {
     font-size: 1.6rem;
   }
@@ -420,9 +446,6 @@ a {
 
 /* @media only screen and (max-width: ) {
 } */
-
-.app {
-}
 
 .Footer {
   background-color: rgb(46, 45, 45);

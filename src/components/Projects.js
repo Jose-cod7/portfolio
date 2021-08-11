@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useState } from "react";
 import DataProjects from "./DataProjects.js";
 
@@ -19,8 +19,8 @@ const Projects = () => {
       <div className="projects-1">
         {DataProjects.map((element) => {
           return (
-            <Card className="project-card">
-              <Card.Img variant="top" key={element.id} src={element.img} />
+            <Card className="project-card" key={element.id}>
+              <Card.Img variant="top" src={element.img} />
 
               <Card.Body>
                 <Card.Title>{element.title} </Card.Title>
@@ -69,7 +69,7 @@ const Modal = ({ title, tools, description }) => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              style={{ borderRadius: "7px" }}
+              style={{ borderRadius: "7px", padding: "1px 6px" }}
             >
               x
             </button>
@@ -86,9 +86,9 @@ const Modal = ({ title, tools, description }) => {
             >
               Close
             </button>
-            <button type="button" className="btn btn-primary">
+            {/* <button type="button" className="btn btn-primary">
               Understood
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
