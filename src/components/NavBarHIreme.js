@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
+const NavBarHireme = () => {
   const history = useHistory();
   const junior = "< Fullstack developer>";
   return (
@@ -31,21 +31,7 @@ const NavBar = () => {
                 HOME
               </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#ABOUT_ME">
-                ABOUT ME
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#TIME_LINE">
-                EDUCATION
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#PORTFOLIO">
-                PORTFOLIO
-              </a>
-            </li>
+
             <li className="nav-item">
               <Link className="nav-link" to="/hireme">
                 HIRE ME
@@ -58,4 +44,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarHireme;

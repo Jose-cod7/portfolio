@@ -44,15 +44,6 @@ nav {
 
 /****** Menulinks *****/
 
-/*
-
-.footer > nada
-.hireme: margin: 0 auto
-
-
-
-*/
-
 nav .nav-link {
   font-size: 0.9rem;
   font-weight: bold;
@@ -101,27 +92,27 @@ nav .nav-link {
 }
 
 .hireme {
-  /* height: 89vh; */
-  padding: 135px 15px 20px 15px;
+  /* height: 100vh; */
+  /* padding: 135px 15px 20px 15px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  padding: 13% 2% 8%;
 }
 
 .hireme-title {
   font-family: keys;
   font-size: 2.5rem;
+  padding-bottom: 18px;
 }
 
 .p-hireme {
   padding: 5px 30px;
+  font-size: calc(0.8rem + 0.5vw);
   text-align: justify;
 }
 
-/* .Content {
-  position: relative;
-  height: 100vh;
-} */
 /****** Header *******/
 
 .header-wraper {
@@ -226,6 +217,10 @@ nav .nav-link {
 .image-me {
   margin-top: 10px;
   border-radius: 5%;
+}
+
+.p-me {
+  font-size: calc(0.8rem + 0.5vw);
 }
 
 /****** timeline *******/
@@ -336,9 +331,89 @@ a {
   width: 20%;
 }
 
+/* Hire section to fit at any width and height device*/
+
+@media only screen and (max-width: 988px) {
+  .hireme-title {
+    padding-top: 12px; /* added */
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .hireme-title {
+    padding-top: 18px;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .hireme-title {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hireme-title {
+    padding-top: 40px;
+    /* padding-bottom: 15px; */
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .hireme-title {
+    padding-top: 70px;
+    /* padding-bottom: 15px; */
+  }
+}
+
+@media only screen and (max-width: 366px) {
+  .hireme-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .hireme-title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 313px) {
+  .hireme-title {
+    padding-top: 110px;
+    font-size: 1.8rem;
+  }
+}
+
+/* @media only screen and (min-width: 1360px) {
+  .hireme {
+    padding: 10% 2% 8%;
+  }
+} */
+
+@media only screen and (min-width: 700px) and (max-width: 780px) {
+  .hireme {
+    padding: 13% 2% 13%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .p-hireme {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 661px) and (min-height: 1014px) {
+  .hireme {
+    height: 100vh;
+    padding: 15% 2% 8%;
+  }
+}
+
+/********************************************/
 @media only screen and (max-width: 850px) {
   .navbar {
     padding: 30px 10px;
+    width: 100%;
   }
 
   .navbar-nav {
@@ -531,4 +606,12 @@ a {
   .popup-content > .project-info {
   padding: 10px 5px;
   }
+  */
+
+/*
+  
+  º fix the width of p tag in the mobile version, 65% in normal screen, make a querie max-width 400px???? 
+  
+  
+  
   */

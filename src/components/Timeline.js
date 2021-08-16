@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as WorkIcon } from "/home/pepe/my-portfolio/src/images/work.svg";
-import { ReactComponent as SchoolIcon } from "/home/pepe/my-portfolio/src/images/school.svg";
+import WorkIcon from "./logos/WorkIcon";
+import SchoolIcon from "./logos/SchoolIcon";
 import DatatimeLine from "./DataTimeline.js";
 import {
   VerticalTimeline,

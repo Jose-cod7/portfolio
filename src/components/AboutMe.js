@@ -10,8 +10,8 @@ const AboutMe = () => {
         <div className="col-xl">
           <Media className="media-comp">
             <img
-              width={250}
-              height={230}
+              width={230}
+              height={210}
               className=" image-me "
               src={BlueDemon}
               alt="Generic placeholder"
@@ -21,20 +21,28 @@ const AboutMe = () => {
                 ABOUT ME
               </h3>
               <p className="p-me" style={{ textAlign: "justify" }}>
-                I completed a degree in the field of industrial engineering with
-                10 years experience in corporate enviroments, now recycling to
-                IT in search of new projects that provide me both new challenges
-                and the possibility of continuing to learn.I love teamwork and
-                have developed a great analytical capacity and leadership, I am
-                passionate about technology that led me to train as a junior
-                developer.
-                <span></span>
+                <strong>
+                  Hello! I'm José Arriaga, a Fullstack Developer.<br></br>
+                </strong>
+                <br></br>I am an active and curious person, often looking for
+                the best solution when it comes to work. I enjoy learning how
+                the things work which led me to complete a degree in Industrial
+                Engineering. With 10 years experience in corporate enviroments
+                leading teams in the areas of QA and production. Recently I've
+                made up my mind to change a carrer. As I am passionate about
+                technology, what led me to train as a junior developer and
+                without any prior knowledge in programming, in March 2021 I
+                started my journey into the programming world. Being determined,
+                responsible and hardworking, my personal goal is continuous
+                learning and self development. For that reason I'm looking for
+                new IT projects that could offer me both - new challenges and a
+                possibility of continuing growth.
               </p>
               <br />
               <Media className="media-comp">
                 <img
                   width={200}
-                  height={160}
+                  height={180}
                   className="image-me second "
                   src={BlueDemon}
                   alt="Generic placeholder"
@@ -49,14 +57,16 @@ const AboutMe = () => {
                       fontSize: "2.3rem",
                     }}
                   >
-                    Something more
+                    HOBBIES 4 MORE
                   </h5>
                   <p className="p-me" style={{ textAlign: "justify" }}>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                    scelerisque ante sollicitudin commodo. Cras purus odio,
-                    vestibulum in vulputate at, tempus viverra turpis. Fusce
-                    condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                    congue felis in faucibus.
+                    Water sports is my passion, I have participated in different
+                    competitions in the disciplines of swimming and water polo.
+                    I love teamwork and the drive that these sports forge.
+                    Besides being an active person, I like to explore my
+                    artistic side by taking photos of everything that catches my
+                    attention.As well as mixing different musical genres when it
+                    comes to music that is also my hobby.
                   </p>
                 </Media.Body>
               </Media>
@@ -65,15 +75,6 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-
-    /*<div className="about-me container-fluid">
-            <div className="Title container-sm">
-                <h1>About Me</h1>
-            </div>  
-            <img src={Me} width="300" height="150" className=""></img>
-            <div>
-            </div>
-        </div>*/
   );
 };
 
