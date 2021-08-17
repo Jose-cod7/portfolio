@@ -22,9 +22,7 @@ const AboutMe = () => {
                 ABOUT ME
               </h3>
               <p className="p-me" style={{ textAlign: "justify" }}>
-                <strong>
-                  Hello! I'm José Arriaga, a Fullstack Developer.<br></br>
-                </strong>
+                <strong>Hello! I'm José Arriaga, a Fullstack Developer.</strong>
                 <br></br>I am an active and curious person, often looking for
                 the best solution when it comes to work. I enjoy learning how
                 the things work which led me to complete a degree in Industrial

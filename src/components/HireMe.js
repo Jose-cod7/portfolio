@@ -38,7 +38,7 @@ function HireMe() {
           <div>
             <a
               target="blank"
-              href="https://drive.google.com/file/d/1Emk6F4hfo3yCnxkuWPdObW7bjdi7gq6f/view?usp=sharing"
+              href="https://drive.google.com/file/d/16TokZX2tJNwn1N4QUV-YEnmhJaYntJRp/view?usp=sharing"
               className="btn-main-cv"
               download
             >
