@@ -1,6 +1,7 @@
 import React from "react";
 // import Me from "../images/model.jpg";
 import BlueDemon from "../images/me.jpg";
+import win from "../images/Winning.jpg";
 import { Media } from "react-bootstrap";
 
 const AboutMe = () => {
@@ -41,10 +42,10 @@ const AboutMe = () => {
               <br />
               <Media className="media-comp">
                 <img
-                  width={200}
-                  height={180}
+                  width={225}
+                  height={190}
                   className="image-me second "
-                  src={BlueDemon}
+                  src={win}
                   alt="Generic placeholder"
                 />
                 <Media.Body className="media-body">
@@ -65,8 +66,8 @@ const AboutMe = () => {
                     I love teamwork and the drive that these sports forge.
                     Besides being an active person, I like to explore my
                     artistic side by taking photos of everything that catches my
-                    attention.As well as mixing different musical genres when it
-                    comes to music that is also my hobby.
+                    attention. As well as mixing different musical genres when
+                    it comes to music that is also my hobby.
                   </p>
                 </Media.Body>
               </Media>

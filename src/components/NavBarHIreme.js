@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import HireMe from "./HireMe";
-import { useHistory } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavBarHireme = () => {
-  const history = useHistory();
   const junior = "< Fullstack developer>";
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
