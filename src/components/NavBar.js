@@ -34,18 +34,20 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#TIME_LINE">
-                EDUCATION
+                MY JOURNEY
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#PORTFOLIO">
-                PORTFOLIO
+                PROJECTS
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/hireme">
-                HIRE ME
-              </Link>
+              <button className="btn btn-outline-primary" type="button">
+                <Link className="nav-link-button" to="/hireme">
+                  HIRE ME
+                </Link>
+              </button>
             </li>
           </ul>
         </div>

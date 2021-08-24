@@ -82,13 +82,50 @@ nav .nav-link {
 }
 
 .navbar-nav > li > a:hover {
-  border-top: solid var(--primary-blue);
-  border-radius: 3px;
+  border-top: 1.5px solid var(--primary-blue);
+  border-radius: 1px;
   width: fit-content;
 }
 
 .navbar-toggler-icon:focus {
   border-top: 0.1875rem solid whitesmoke;
+}
+
+/* .btn-primary {
+  background-color: #182fff;
+  border: 0px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 0rem !important;
+  margin-right: 10px;
+  margin-left: 10px;
+} */
+
+.btn-outline-primary {
+  border-color: #182fff;
+  padding: 6px 8px;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #182fff;
+  border-color: #182fff;
+}
+
+button .nav-link-button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+
+  padding: 10px 4px;
+  text-decoration: none;
+}
+
+button .nav-link-button:hover {
+  color: #fff;
+  border-color: #182fff;
 }
 
 .hireme {
@@ -110,18 +147,18 @@ nav .nav-link {
 .p-hireme {
   padding: 5px 30px;
   font-size: calc(0.8rem + 0.5vw);
-  text-align: justify;
+  /* text-align: ; */
 }
 
 /****** Header *******/
 
 .header-wraper {
   position: relative;
-  /* background: url(/home/pepe/my-portfolio/src/images/bgfullstack.jpg);*/
-  background: url(./images/bgfullstack.jpg);
+  /* background: url(./images/bgfullstack.jpg); */
   background-size: 100% 100%;
   background-position: center;
-  height: 80vh;
+  background-color: rgb(29, 28, 28);
+  height: 35vh; /*previous value 80vh*/
   width: 100%;
 }
 
@@ -136,7 +173,7 @@ nav .nav-link {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: px;
+  padding-bottom: 30px; /*previous value 0*/
   z-index: 1;
 }
 
@@ -180,18 +217,18 @@ nav .nav-link {
 
 /****** PArticles js *******/
 
-.tsparticles-canvas-el {
+/* .tsparticles-canvas-el {
   position: absolute;
   height: 80vh;
   width: 100vw;
   z-index: 1;
-}
+} */
 
 /****** About me  *******/
 
 .about-me {
   background-color: rgb(233, 233, 233);
-  border-top: 0.1rem solid var(--primary-blue);
+  border-top: 0.1rem solid; /*var(--primary-blue);*/
   padding: 20px 40px 20px 40px;
   /* height: 30rem; */
   width: 100%;
@@ -530,6 +567,11 @@ a {
   width: -webkit-fill-available;
 }
 
+.mail,
+.mobil {
+  text-decoration: none !important;
+}
+
 .contact-info {
   text-align: center;
   align-items: center;
@@ -611,6 +653,8 @@ a {
 /*
   
   º fix the width of p tag in the mobile version, 65% in normal screen, make a querie max-width 400px???? 
+
+  ª add a padding r/l in about me section? in mobile version
   
   
   

@@ -10,7 +10,9 @@ import NavBar from "./components/NavBar.js";
 export const MainInfo = () => {
   return (
     <div>
-      <NavBar />
+      <div className="clear">
+        <NavBar />
+      </div>
       <Header />
       <AboutMe path="/aboutme" />
       <Timeline />

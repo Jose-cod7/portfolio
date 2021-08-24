@@ -9,9 +9,17 @@ export const Footer = () => {
     <div className="Footer">
       <Container fluid>
         <Row className="contact-info">
-          <Col className="column-footer"> Movil: +34 622 383 091</Col>
           <Col className="column-footer">
-            <a href="mailto:josegarriaga7@gmail.com" target="blank">
+            <a className="mobil" href="tel:+34 622 383 091">
+              Mobil: +34 622 383 091
+            </a>
+          </Col>
+          <Col className="column-footer">
+            <a
+              className="mail"
+              href="mailto:josegarriaga7@gmail.com"
+              target="blank"
+            >
               josegarriaga7@gmail.com
             </a>
           </Col>

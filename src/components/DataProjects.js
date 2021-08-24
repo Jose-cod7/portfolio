@@ -2,7 +2,7 @@ let projectsInfo = [
   {
     id: 1,
     img: "images/card1.jpg",
-    title: "Card 1",
+    title: "COMING SOON!",
     projectName: "Occycling",
     tools:
       "React | Javascript | ReactBoostrap | Express | Node.Js | Postman | PostgreSql | HTML5 | CSS3 | JWT",
@@ -12,20 +12,18 @@ let projectsInfo = [
   {
     id: 2,
     img: "images/citycode.jpg",
-    title: "Card 2",
-    projectName: "Coding work",
-    tools: "Vue.Js | Javascript | Boostrap | MongoDB | mySQL | HTML5 | C#",
-    description:
-      "Code coding, mouse, keyboard screen in the room, coffe in the morning, play games with the mates, lear a lot, work from home and a lot of holidays in the beach, swimming in the sea under the sun.",
+    title: "COMING SOON!",
+    projectName: "",
+    tools: "",
+    description: "",
   },
   {
     id: 3,
     img: "images/card3.jpg",
-    title: "Card 3",
-    projectName: "Swimming",
-    tools: "React | Python | SQL | HTML5 | .NET ",
-    description:
-      "Swim, swimming, crawl, breaststroke, buterfly, backstroke, googles, swim suit, dive, swimming pool, medalls .",
+    title: "COMING SOON!",
+    projectName: "",
+    tools: " ",
+    description: "",
   },
 ];
 
