@@ -1,6 +1,6 @@
 import React from "react";
 // import Me from "../images/model.jpg";
-import BlueDemon from "../images/me.jpg";
+import CV from "../images/cv.jpg";
 import win from "../images/Winning.jpg";
 import { Media } from "react-bootstrap";
 
@@ -14,7 +14,7 @@ const AboutMe = () => {
               width={230}
               height={210}
               className=" image-me "
-              src={BlueDemon}
+              src={CV}
               alt="Generic placeholder"
             />
             <Media.Body className="media-body">

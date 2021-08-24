@@ -1,4 +1,4 @@
-const Modal = ({ title, tools, description }) => {
+const Modal = ({ title, tools, description, readmore, deployed }) => {
   return (
     <div
       className="modal fade"
@@ -15,6 +15,7 @@ const Modal = ({ title, tools, description }) => {
             <h5 className="modal-title" id="staticBackdropLabel">
               {title}
             </h5>
+
             <button
               type="button"
               className="btn-close"
@@ -28,8 +29,17 @@ const Modal = ({ title, tools, description }) => {
           <div className="modal-body">
             <p>{tools}</p>
             <p>{description}</p>
+            <span>{deployed}</span>
           </div>
           <div className="modal-footer">
+            {/* <button type="button" className="btn btn-info">
+              Check it out!
+            </button> */}
+            <button type="button" className="btn btn-primary">
+              <a className="tag-read" href={readmore} target="blank">
+                Read more!
+              </a>
+            </button>
             <button
               type="button"
               className="btn btn-secondary"
@@ -37,9 +47,6 @@ const Modal = ({ title, tools, description }) => {
             >
               Close
             </button>
-            {/* <button type="button" className="btn btn-primary">
-                Understood
-              </button> */}
           </div>
         </div>
       </div>

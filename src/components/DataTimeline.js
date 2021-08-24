@@ -5,6 +5,7 @@ let timelineData = [
     location: "Nozama, VirtuaBroker",
     description: "Web development, DB, MVC, UI/UX",
     buttonText: "View site",
+    site: "https://virtuabroker.com/",
     date: "May 2021 - present",
     icon: "work",
   },
