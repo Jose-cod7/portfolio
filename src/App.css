@@ -154,11 +154,11 @@ button .nav-link-button:hover {
 
 .header-wraper {
   position: relative;
-  /* background: url(./images/bgfullstack.jpg); */
+  background: url(./images/bgfullstack.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-color: rgb(29, 28, 28);
-  height: 35vh; /*previous value 80vh*/
+  height: 80vh; /*previous value 35vh without the background url*/
   width: 100%;
 }
 
@@ -546,11 +546,11 @@ a {
   }
 }
 
-/* @media only screen and (max-width: 320px) {
-  .about-me {
-    height: 70px;
+@media only screen and (max-width: 320px) {
+  .typed-text {
+    font-size: 1.9rem;
   }
-} */
+}
 
 /* @media only screen and (max-width: 280px) {
   .typed-text {
