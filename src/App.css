@@ -546,16 +546,19 @@ a {
   }
 }
 
+/* @media only screen and (max-width: 320px) {
+  .about-me {
+    height: 70px;
+  }
+} */
+
 /* @media only screen and (max-width: 280px) {
   .typed-text {
     font-size: 1.6rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .typed-text {
-    font-size: 1.6rem;
-  }
+
   .workButton,
   .schoolButton {
     font-size: x-small;
