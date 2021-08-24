@@ -8,7 +8,7 @@ let projectsInfo = [
     tools:
       "React | Javascript | ReactBoostrap | Express | Node.Js | Postman | PostgreSql | HTML5 | CSS3 | JWT",
     description:
-      "The OCCycling project has been designed to address the isolation of residents of the Nea Kavala refugee camp. Having access to bicycles free of charge means that camp residents can access the amenities mentioned, as well as the community and social events beyond the camp. .",
+      "A platform to manage the free bicycle provision service given by OCC in a refugee camp in Greece to allow them to go to the city.",
     readMore: "https://openculturalcenter.org/es/occycling-2/",
   },
   {

@@ -1,6 +1,6 @@
 import React from "react";
 // import Me from "../images/model.jpg";
-import BlueDemon from "../images/pepe.png";
+import BlueDemon from "../images/pepe.jpg";
 import win from "../images/Winning.jpg";
 import { Media } from "react-bootstrap";
 
