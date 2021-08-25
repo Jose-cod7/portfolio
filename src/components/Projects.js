@@ -21,7 +21,7 @@ const Projects = () => {
         {DataProjects.map((element) => {
           return (
             <Card className="project-card" key={element.id}>
-              <Card.Img variant="top" src={element.img} height="252.55px" />
+              <Card.Img variant="top" src={element.img} />
 
               <Card.Body>
                 <Card.Title>{element.title} </Card.Title>

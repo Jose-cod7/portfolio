@@ -1,7 +1,7 @@
 let projectsInfo = [
   {
     id: 1,
-    img: "images/occycling.jpg",
+    img: "images/occycling-3.2.jpg",
     title: "OCCYCLING",
     deployed: "Have not yet deployed",
     projectName: "Occycling",

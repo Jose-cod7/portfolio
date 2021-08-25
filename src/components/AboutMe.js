@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div className="col-xl">
           <Media className="media-comp">
             <img
-              width={230}
+              // width={230}
               height={210}
               className=" image-me "
               src={BlueDemon}
@@ -40,8 +40,8 @@ const AboutMe = () => {
               <br />
               <Media className="media-comp">
                 <img
-                  width={225}
-                  height={190}
+                  // width={225}
+                  height={210}
                   className="image-me second "
                   src={win}
                   alt="Generic placeholder"

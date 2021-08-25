@@ -26,17 +26,17 @@ export const Footer = () => {
           <Col className="column-footer">
             <a
               href="https://www.linkedin.com/in/jose-arriaga-mendez-27970386/"
-              className="linkedin social"
+              className="linkedin-social"
               target="blank"
             >
               <img className="linkedinlogo" alt="linkedin" src={linkedin}></img>
             </a>
             <a
               href="https://github.com/Jose-cod7"
-              className="Github social"
+              className="github-social"
               target="blank"
             >
-              <img className="Githublogo" alt="Github" src={github}></img>
+              <img className="githublogo" alt="Github" src={github}></img>
             </a>
           </Col>
         </Row>
