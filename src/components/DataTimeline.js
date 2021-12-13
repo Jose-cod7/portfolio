@@ -6,7 +6,7 @@ let timelineData = [
     description: "Frontend Development, Use SCSS to give components style",
     buttonText: "View site",
     site: "https://acct.global/",
-    date: "May 2021 - Present",
+    date: "SEP 2021 - Present",
     icon: "work",
   },
   {
