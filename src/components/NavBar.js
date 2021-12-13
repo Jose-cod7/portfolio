@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./shared-components/LanguageSwitcher";
 
 const NavBar = () => {
   const junior = "< Fullstack developer>";
+  const { t, i18n } = useTranslation("translation");
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
@@ -24,31 +27,34 @@ const NavBar = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/">
-                HOME
+                {t("home").toUpperCase()}
               </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#ABOUT_ME">
-                ABOUT ME
+                {t("about_me").toUpperCase()}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#TIME_LINE">
-                MY JOURNEY
+                {t("my_journey").toUpperCase()}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#PORTFOLIO">
-                PROJECTS
+                {t("projects").toUpperCase()}
               </a>
             </li>
             <li className="nav-item">
               <button className="btn btn-outline-primary" type="button">
                 <Link className="nav-link-button" to="/hireme">
-                  HIRE ME
+                  {t("hire_me").toUpperCase()}
                 </Link>
               </button>
             </li>
+            {/* <li className="nav-item">
+              <LanguageSwitcher className="nav-link" />
+            </li> */}
           </ul>
         </div>
       </div>

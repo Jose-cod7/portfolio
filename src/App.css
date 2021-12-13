@@ -288,15 +288,11 @@ h3 {
 }
 
 .date {
-  color: rgb(
-    224,
-    230,
-    233
-  ); /* I can a put a lighter color and darker bg-color and at the media rule I the font appears blacker  */
+  color: rgb(49, 49, 49);
 }
 
 #description {
-  margin: 1.5em 0 2em 0;
+  margin: 1.5em 0 1em 0;
 }
 
 a {
@@ -326,12 +322,16 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1170px) {
+  .date {
+    color: rgb(224, 230, 233);
+  }
+}
+
 @media only screen and (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: rgb(41, 41, 41);
-    margin-top: 1em;
   }
 }
 

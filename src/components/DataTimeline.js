@@ -1,12 +1,23 @@
 let timelineData = [
   {
+    id: 5,
+    title: "Web Developer",
+    location: "ACCT Consulting & Technology",
+    description: "Frontend Development, Use SCSS to give components style",
+    buttonText: "View site",
+    site: "https://acct.global/",
+    date: "May 2021 - Present",
+    icon: "work",
+  },
+  {
     id: 4,
     title: "Junior Developer",
     location: "Nozama, VirtuaBroker",
-    description: "Web development, DB, MVC, UI/UX",
+    description:
+      "Frontend Development, Data entry of API and interacted with frontend components",
     buttonText: "View site",
     site: "https://virtuabroker.com/",
-    date: "May 2021 - present",
+    date: "May 2021 - SEP 2021",
     icon: "work",
   },
   {

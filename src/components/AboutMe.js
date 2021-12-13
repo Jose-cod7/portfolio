@@ -3,8 +3,10 @@ import React from "react";
 import BlueDemon from "../images/pepe.jpg";
 import win from "../images/Winning.jpg";
 import { Media } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <div className="about-me container-fluid">
       <div className="row">

@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const NavBarHireme = () => {
   const junior = "< Fullstack developer>";
+  const { t, i18n } = useTranslation("translation");
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
@@ -25,7 +27,7 @@ const NavBarHireme = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/">
-                HOME
+                {t("home").toUpperCase()}
               </Link>
             </li>
 
